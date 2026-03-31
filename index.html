@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ACS — Avulus Cyber Space. Private gaming rooms, premium PC setups, and in-room restaurant service. The ultimate cyber lounge experience in Moscow." />
+  <meta name="keywords" content="ACS, Avulus Cyber Space, cyber lounge, gaming rooms, private gaming, esports lounge, Moscow" />
+  <meta property="og:title" content="ACS — Avulus Cyber Space" />
+  <meta property="og:description" content="Private Gaming Rooms. Premium Experience. Play, relax, and order — all in one place." />
+  <meta property="og:type" content="website" />
+  <title>ACS — Avulus Cyber Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <span class="logo-mark">ACS</span>
+        <span class="logo-sub">Avulus Cyber Space</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#concept" class="nav-link">Concept</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#restaurant" class="nav-link">Restaurant</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#location" class="nav-link">Location</a></li>
+      </ul>
+      <a href="#location" class="btn btn-primary nav-cta" id="nav-book-btn">Book a Room</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#concept" class="mobile-link">Concept</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#restaurant" class="mobile-link">Restaurant</a></li>
+      <li><a href="#how-it-works" class="mobile-link">How It Works</a></li>
+      <li><a href="#location" class="mobile-link">Location</a></li>
+      <li><a href="#location" class="btn btn-primary" style="display:inline-block;margin-top:1rem;" id="mobile-book-btn">Book a Room</a></li>
+    </ul>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO -->
+  <!-- ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero_bg.png" alt="ACS Cyber Lounge Interior" class="hero-img" />
+      <div class="hero-overlay"></div>
+      <div class="hero-gradient"></div>
+    </div>
+
+    <!-- Animated particles -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="dot-pulse"></span>
+        <span>Moscow's Premier Cyber Lounge</span>
+      </div>
+      <h1 class="hero-title reveal-up delay-1">
+        Private Gaming Rooms.<br />
+        <span class="gradient-text">Premium Experience.</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        Play, relax, and order — all in one place.
+      </p>
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#location" class="btn btn-primary btn-lg" id="hero-book-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book a Room
+        </a>
+        <a href="#restaurant" class="btn btn-outline btn-lg" id="hero-menu-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+          View Menu
+        </a>
+      </div>
+      <div class="hero-stats reveal-up delay-4">
+        <div class="stat">
+          <span class="stat-num">12+</span>
+          <span class="stat-label">Private Rooms</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">4K</span>
+          <span class="stat-label">Gaming Monitors</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Open Hours</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: CONCEPT -->
+  <!-- ============================================ -->
+  <section class="concept section" id="concept">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">The Concept</span>
+        <h2 class="section-title">What is ACS?</h2>
+        <p class="section-desc">
+          ACS is a private-format cyber lounge with separate PC rooms, VIP spaces,
+          and a full-service restaurant — built for those who demand more than a
+          standard gaming cafe.
+        </p>
+      </div>
+
+      <div class="concept-split">
+        <div class="concept-image reveal-left">
+          <img src="images/private_room.png" alt="ACS Private Gaming Room" />
+          <div class="img-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Premium Setup
+          </div>
+        </div>
+        <div class="concept-features reveal-right">
+          <div class="feature-card" id="feature-private">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="feature-text">
+              <h3>Private Rooms Only</h3>
+              <p>No strangers. Your session, your space. Every room is booked exclusively for your group — complete privacy guaranteed.</p>
+            </div>
+          </div>
+          <div class="feature-card" id="feature-premium">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="feature-text">
+              <h3>Premium Setups</h3>
+              <p>Top-tier hardware at every station — 240Hz monitors, mechanical keyboards, high-performance PCs — built for serious players.</p>
+            </div>
+          </div>
+          <div class="feature-card" id="feature-food">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <div class="feature-text">
+              <h3>In-Room Food & Drinks</h3>
+              <p>Order from our full restaurant menu directly from your PC. Food and drinks delivered to your room without missing a second of play.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: EXPERIENCE / SCENARIOS -->
+  <!-- ============================================ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Use Cases</span>
+        <h2 class="section-title">How You Can Use ACS</h2>
+        <p class="section-desc">Whether you're grinding solo or hosting an event, ACS has the perfect space for you.</p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="exp-card reveal-up delay-1" id="exp-solo">
+          <div class="exp-number">01</div>
+          <div class="exp-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <h3>Solo Gaming</h3>
+          <p>Your own private sanctuary. Lock in, focus, and dominate. The perfect environment for ranked sessions and deep play.</p>
+          <div class="exp-tag">From 1 player</div>
+        </div>
+
+        <div class="exp-card reveal-up delay-2" id="exp-duo">
+          <div class="exp-number">02</div>
+          <div class="exp-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Duo & Friends</h3>
+          <p>Play together in our multi-seat rooms. From duo queue to full squad sessions — game as a team in complete privacy.</p>
+          <div class="exp-tag">2–6 players</div>
+        </div>
+
+        <div class="exp-card reveal-up delay-3 exp-card--featured" id="exp-vip">
+          <div class="exp-number">03</div>
+          <div class="exp-badge">VIP</div>
+          <div class="exp-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>VIP Rooms</h3>
+          <p>The ultimate ACS experience. Oversized rooms with premium seating, dedicated service, lounge lighting, and exclusive perks.</p>
+          <div class="exp-tag">Up to 8 players</div>
+        </div>
+
+        <div class="exp-card reveal-up delay-4" id="exp-events">
+          <div class="exp-number">04</div>
+          <div class="exp-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="23" y1="11" x2="17" y2="11"/><line x1="20" y1="8" x2="20" y2="14"/></svg>
+          </div>
+          <h3>Events & Bootcamps</h3>
+          <p>Book the full venue for tournaments, corporate events, team bootcamps, or private parties. Custom catering included.</p>
+          <div class="exp-tag">Full venue</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: RESTAURANT / ORDERING -->
+  <!-- ============================================ -->
+  <section class="restaurant section" id="restaurant">
+    <div class="container">
+      <div class="restaurant-layout">
+        <div class="restaurant-left reveal-left">
+          <span class="section-tag">The Kitchen</span>
+          <h2 class="section-title">Order Without<br />Leaving Your Seat</h2>
+          <p class="restaurant-desc">
+            Browse our full menu, place orders, and track delivery — all from your in-room terminal or personal device. Our kitchen is steps away, so you never have to pause your session.
+          </p>
+          <ul class="restaurant-perks">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Order directly from your PC
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Live order tracking
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Full menu available all-day
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Craft cocktails & energy drinks
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary" id="view-menu-btn">View Full Menu</a>
+        </div>
+        <div class="restaurant-right reveal-right">
+          <img src="images/restaurant_area.png" alt="ACS Restaurant and Bar" class="restaurant-img" />
+          <div class="menu-cards">
+            <div class="menu-card" id="menu-burger">
+              <div class="menu-card-icon">🍔</div>
+              <div class="menu-card-info">
+                <span class="menu-card-name">ACS Signature Burger</span>
+                <span class="menu-card-price">690 ₽</span>
+              </div>
+            </div>
+            <div class="menu-card" id="menu-wings">
+              <div class="menu-card-icon">🍗</div>
+              <div class="menu-card-info">
+                <span class="menu-card-name">Spicy Wings × 8</span>
+                <span class="menu-card-price">520 ₽</span>
+              </div>
+            </div>
+            <div class="menu-card" id="menu-noodles">
+              <div class="menu-card-icon">🍜</div>
+              <div class="menu-card-info">
+                <span class="menu-card-name">Tokyo Ramen</span>
+                <span class="menu-card-price">480 ₽</span>
+              </div>
+            </div>
+            <div class="menu-card" id="menu-cocktail">
+              <div class="menu-card-icon">🍹</div>
+              <div class="menu-card-info">
+                <span class="menu-card-name">ACS Signature Cocktail</span>
+                <span class="menu-card-price">390 ₽</span>
+              </div>
+            </div>
+            <div class="menu-card" id="menu-energy">
+              <div class="menu-card-icon">⚡</div>
+              <div class="menu-card-info">
+                <span class="menu-card-name">Energy Boost Pack</span>
+                <span class="menu-card-price">250 ₽</span>
+              </div>
+            </div>
+            <div class="menu-card" id="menu-coffee">
+              <div class="menu-card-icon">☕</div>
+              <div class="menu-card-info">
+                <span class="menu-card-name">Specialty Coffee</span>
+                <span class="menu-card-price">220 ₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: HOW IT WORKS -->
+  <!-- ============================================ -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Simple Process</span>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-desc">From booking to gaming in four simple steps.</p>
+      </div>
+
+      <div class="steps-container">
+        <div class="steps-line"></div>
+        <div class="step reveal-up delay-1" id="step-1">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Choose Your Room</h3>
+          <p>Select your session type, room size, and preferred time slot through our booking system.</p>
+        </div>
+
+        <div class="step reveal-up delay-2" id="step-2">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          </div>
+          <h3>Arrive & Login</h3>
+          <p>Show up, check in at reception, and your private room is ready. Log in with your ACS account to access all features.</p>
+        </div>
+
+        <div class="step reveal-up delay-3" id="step-3">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Order from Your PC</h3>
+          <p>Browse the ACS menu right from your terminal. Order food and drinks with a click — delivered directly to your room.</p>
+        </div>
+
+        <div class="step reveal-up delay-4" id="step-4">
+          <div class="step-number">4</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h3>Enjoy Your Session</h3>
+          <p>Game hard, eat well, relax in your private space. Extend your session anytime or return for a new booking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: ATMOSPHERE / GALLERY -->
+  <!-- ============================================ -->
+  <section class="atmosphere section" id="atmosphere">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">The Space</span>
+        <h2 class="section-title">The ACS Atmosphere</h2>
+        <p class="section-desc">Designed to inspire, built for comfort. Every detail considered.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--tall reveal-up delay-1" id="gallery-hero">
+          <img src="images/hero_bg.png" alt="ACS Main Lounge" />
+          <div class="gallery-label">Main Lounge</div>
+        </div>
+        <div class="gallery-item reveal-up delay-2" id="gallery-room">
+          <img src="images/private_room.png" alt="Private Gaming Room" />
+          <div class="gallery-label">Private Room</div>
+        </div>
+        <div class="gallery-item reveal-up delay-3" id="gallery-restaurant">
+          <img src="images/restaurant_area.png" alt="Restaurant & Bar" />
+          <div class="gallery-label">Restaurant & Bar</div>
+        </div>
+        <div class="gallery-item gallery-item--wide reveal-up delay-4" id="gallery-vip">
+          <img src="images/gallery1.png" alt="VIP Room" />
+          <div class="gallery-label">VIP Suite</div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="testimonials reveal-up">
+        <div class="testimonial" id="testimonial-1">
+          <div class="testimonial-quote">"Finally a place where I can game for hours without distractions. The VIP room is incredible — felt like my own personal setup."</div>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <div class="author-name">Aleksei M.</div>
+              <div class="author-role">CS2 Player</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial" id="testimonial-2">
+          <div class="testimonial-quote">"We booked the full venue for our team bootcamp. The setup, the food, the atmosphere — nothing comes close to ACS in Moscow."</div>
+          <div class="testimonial-author">
+            <div class="author-avatar">D</div>
+            <div>
+              <div class="author-name">Dmitri K.</div>
+              <div class="author-role">Esports Team Captain</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial" id="testimonial-3">
+          <div class="testimonial-quote">"Ordered food three times in one session without ever leaving my seat. The ramen is actually incredible. 10/10 would spend my weekend here again."</div>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <div class="author-name">Sofia R.</div>
+              <div class="author-role">Regular Member</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: LOCATION / FINAL CTA -->
+  <!-- ============================================ -->
+  <section class="location section" id="location">
+    <div class="container">
+      <div class="location-card reveal-up">
+        <div class="location-left">
+          <span class="section-tag">Find Us</span>
+          <h2 class="section-title">Visit ACS</h2>
+          <div class="location-details">
+            <div class="location-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Address</strong>
+                <span>Moscow, Russia (TBD)</span>
+              </div>
+            </div>
+            <div class="location-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <strong>Hours</strong>
+                <span>24/7 — Always Open</span>
+              </div>
+            </div>
+            <div class="location-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.56 3.44 2 2 0 0 1 3.54 1.25h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2.03z"/></svg>
+              <div>
+                <strong>Contact</strong>
+                <span>info@acs.gg</span>
+              </div>
+            </div>
+          </div>
+          <div class="location-actions">
+            <a href="#" class="btn btn-primary btn-lg" id="book-now-btn">Book Now</a>
+            <a href="mailto:info@acs.gg" class="btn btn-outline btn-lg" id="contact-us-btn">Contact Us</a>
+          </div>
+        </div>
+        <div class="location-map reveal-right">
+          <div class="map-placeholder">
+            <div class="map-pin">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3" fill="white"/></svg>
+            </div>
+            <span class="map-label">ACS Moscow</span>
+            <span class="map-sublabel">Opening Soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-mark">ACS</span>
+          <p>Avulus Cyber Space — where premium gaming meets luxury comfort. Moscow's finest private cyber lounge.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" id="footer-instagram" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-link" id="footer-telegram" aria-label="Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2L2 9.5l7 2.5 2.5 7L21.5 2z"/><line x1="9" y1="12" x2="21.5" y2="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#restaurant">Restaurant</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Rooms</h4>
+          <ul>
+            <li><a href="#experience">Solo Room</a></li>
+            <li><a href="#experience">Duo Room</a></li>
+            <li><a href="#experience">VIP Suite</a></li>
+            <li><a href="#experience">Private Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@acs.gg">info@acs.gg</a></li>
+            <li><a href="#">Moscow, Russia</a></li>
+            <li><a href="#">24/7 Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ACS — Avulus Cyber Space. All rights reserved.</span>
+        <span>Built for the next level.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
