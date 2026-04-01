@@ -73,7 +73,11 @@
   gap: 10px;
   flex: 1;
 }
-.cardTitle { line-height: 1.2; }
+.cardTitle {
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
 .cardDesc {
   font-size: 0.875rem;
   color: var(--text-2);

@@ -39,7 +39,7 @@ export const content = {
         id: 'club',
         image: '/images/format_club.jpg',
         tag: { ru: 'Клуб', en: 'Club' },
-        title: { ru: 'Приватные PC‑комнаты', en: 'Private PC Rooms' },
+        title: { ru: 'Приватные PC-комнаты', en: 'Private PC Rooms' },
         desc: {
           ru: 'Отдельные комнаты с профессиональными ПК. Никаких посторонних — только ваша компания.',
           en: 'Separate rooms with high-end PCs. No strangers — just your group.',
@@ -50,7 +50,7 @@ export const content = {
         id: 'vip',
         image: '/images/format_vip.jpg',
         tag: { ru: 'VIP', en: 'VIP' },
-        title: { ru: 'VIP‑пространства', en: 'VIP Spaces' },
+        title: { ru: 'VIP-пространства', en: 'VIP Spaces' },
         desc: {
           ru: 'Просторные комнаты с диванами, большим экраном и расширенным сервисом.',
           en: 'Spacious rooms with sofas, large screen and premium service.',
