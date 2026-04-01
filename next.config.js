@@ -3,8 +3,9 @@ const nextConfig = {
   images: {
     formats: ['image/webp'],
   },
-  // CMS-ready: future image domains can be added here
-  // images: { domains: ['your-cdn.com'] }
+  turbopack: {
+    root: __dirname,
+  },
 }
 
 module.exports = nextConfig
