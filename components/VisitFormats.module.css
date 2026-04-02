@@ -103,16 +103,13 @@
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
   }
-  /* Last two cards span the bottom row centered */
-  .cards > :nth-child(4) { grid-column: 1 / 2; }
-  .cards > :nth-child(5) { grid-column: 2 / 3; }
-
+  .cardsRest {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
   .card { width: 100%; }
 }
 
 @media (min-width: 1100px) {
-  .cards { grid-template-columns: repeat(5, 1fr); }
-  .cards > :nth-child(4) { grid-column: auto; }
-  .cards > :nth-child(5) { grid-column: auto; }
   .cardImg { height: 210px; }
 }

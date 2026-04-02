@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react'
 import { useLang } from '@/context/LangContext'
 import { content } from '@/lib/content'
 import styles from './ContactMap.module.css'
+import TrackedLink from './TrackedLink'
 
 export default function ContactMap() {
   const { lang } = useLang()
@@ -55,8 +56,13 @@ export default function ContactMap() {
               </div>
             </div>
 
+            <div style={{ marginTop: 24, marginBottom: 16 }}>
+              <p style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--accent-lt)' }}>{c.microcopy[lang]}</p>
+              <p style={{ fontSize: '0.875rem', color: 'var(--text-3)' }}>{c.microcopy2[lang]}</p>
+            </div>
+
             <div className={styles.ctas}>
-              <a
+              <TrackedLink
                 href={c.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -65,7 +71,7 @@ export default function ContactMap() {
               >
                 <TelegramIcon />
                 {c.cta1[lang]}
-              </a>
+              </TrackedLink>
               <a
                 href={`tel:${c.phone}`}
                 className="btn btn-outline"

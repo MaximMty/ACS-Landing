@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { useLang } from '@/context/LangContext'
 import { content } from '@/lib/content'
 import styles from './StickyMobileCTA.module.css'
+import TrackedLink from './TrackedLink'
 
 export default function StickyMobileCTA() {
   const { lang } = useLang()
@@ -21,7 +22,7 @@ export default function StickyMobileCTA() {
       aria-label="Quick booking actions"
       role="complementary"
     >
-      <a
+      <TrackedLink
         href={content.contact.telegram}
         target="_blank"
         rel="noopener noreferrer"
@@ -30,7 +31,7 @@ export default function StickyMobileCTA() {
       >
         <TgIcon />
         {c.cta1[lang]}
-      </a>
+      </TrackedLink>
       <a
         href={`tel:${content.contact.phone}`}
         className={`btn btn-outline ${styles.cta}`}

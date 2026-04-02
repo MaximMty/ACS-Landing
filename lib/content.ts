@@ -23,18 +23,18 @@ export const content = {
       en: 'Private gaming rooms, restaurant and a space to relax\nin the heart of Moscow',
     },
     pills: {
-      ru: ['Полная приватность', 'Комфорт и атмосфера', 'Центр города'],
-      en: ['Complete Privacy', 'Comfort & Atmosphere', 'City Centre'],
+      ru: ['Приватные комнаты (без посторонних)', 'Центр Москвы', 'Ресторан внутри', 'Подходит для компаний'],
+      en: ['Private Rooms (No Strangers)', 'City Centre', 'Restaurant Inside', 'Perfect for Groups'],
     },
     cta1: { ru: 'Забронировать', en: 'Book Now' },
-    cta2: { ru: 'Позвонить', en: 'Call Us' },
+    cta2: { ru: 'Написать в Telegram', en: 'Telegram' },
     scroll: { ru: 'листайте', en: 'scroll' },
   },
 
   formats: {
     tag: { ru: 'Форматы посещения', en: 'Visit Formats' },
     title: { ru: 'Как вы можете провести время', en: 'How You Can Spend Your Time' },
-    items: [
+    clubItems: [
       {
         id: 'club',
         image: '/images/format_club.jpg',
@@ -44,7 +44,7 @@ export const content = {
           ru: 'Отдельные комнаты с профессиональными ПК. Никаких посторонних — только ваша компания.',
           en: 'Separate rooms with high-end PCs. No strangers — just your group.',
         },
-        for: { ru: 'Для: геймеров, пар, друзей', en: 'For: gamers, couples, friends' },
+        for: { ru: 'Для: 1-2 человек', en: 'For: 1-2 people' },
       },
       {
         id: 'vip',
@@ -55,18 +55,7 @@ export const content = {
           ru: 'Просторные комнаты с диванами, большим экраном и расширенным сервисом.',
           en: 'Spacious rooms with sofas, large screen and premium service.',
         },
-        for: { ru: 'Для: групп до 8 человек', en: 'For: groups up to 8' },
-      },
-      {
-        id: 'restaurant',
-        image: '/images/format_restaurant.jpg',
-        tag: { ru: 'Ресторан', en: 'Restaurant' },
-        title: { ru: 'Только поесть — тоже можно', en: 'Just Dining — No Gaming Required' },
-        desc: {
-          ru: 'Полноценный ресторан внутри пространства. Можно прийти без игрового сеанса.',
-          en: 'A full restaurant inside the venue. You can visit without booking a gaming session.',
-        },
-        for: { ru: 'Для: всех гостей', en: 'For: all guests' },
+        for: { ru: 'Для: компании 4-8 человек', en: 'For: groups of 4-8' },
       },
       {
         id: 'bootcamp',
@@ -77,7 +66,20 @@ export const content = {
           ru: 'Идеальные условия для командных тренировок, турниров и игровых марафонов.',
           en: 'Perfect conditions for team training, tournaments and gaming marathons.',
         },
-        for: { ru: 'Для: команд, киберспортсменов', en: 'For: teams, esports players' },
+        for: { ru: 'Для: команд по 5-6 человек', en: 'For: teams of 5-6' },
+      },
+    ],
+    restItems: [
+      {
+        id: 'restaurant',
+        image: '/images/format_restaurant.jpg',
+        tag: { ru: 'Ресторан', en: 'Restaurant' },
+        title: { ru: 'Только поесть — тоже можно', en: 'Just Dining — No Gaming Required' },
+        desc: {
+          ru: 'Полноценный ресторан внутри пространства. Можно прийти без игрового сеанса.',
+          en: 'A full restaurant inside the venue. You can visit without booking a gaming session.',
+        },
+        for: { ru: 'Для: всех гостей', en: 'For: all guests' },
       },
       {
         id: 'events',
@@ -95,14 +97,14 @@ export const content = {
 
   restaurant: {
     tag: { ru: 'Ресторан', en: 'Restaurant' },
-    title: { ru: 'Можно прийти\nпросто поесть', en: 'Come Just\nto Eat' },
+    title: { ru: 'Можно прийти\nтолько поесть', en: 'Come Just\nto Eat' },
     desc: {
-      ru: 'Неоновый ресторан внутри клуба с полноценным меню — от завтраков до коктейлей. Атмосфера уникальная, кухня — настоящая.',
-      en: 'A neon restaurant inside the venue with a full menu — from breakfast to cocktails. Unique atmosphere, real cuisine.',
+      ru: 'Неоновый ресторан внутри клуба. От завтраков до коктейлей. Отличная кухня, уникальная атмосфера.',
+      en: 'A neon restaurant inside the venue. From breakfast to cocktails. Great cuisine, unique atmosphere.',
     },
     note: {
-      ru: 'Игровой сеанс не обязателен',
-      en: 'No gaming session required',
+      ru: 'Не нужно бронировать ПК',
+      en: 'No PC booking required',
     },
     cta: { ru: 'Смотреть меню', en: 'View Menu' },
     menuHref: '#', // replace with PDF or IG link
@@ -115,11 +117,13 @@ export const content = {
       ru: 'Итоговая стоимость зависит от длительности сеанса и состава группы',
       en: 'Final cost depends on session duration and group size',
     },
+    includesLabel: { ru: 'Что входит:', en: 'What\'s included:' },
     plans: [
       {
         id: 'standard',
         name: { ru: 'Стандарт', en: 'Standard' },
         desc: { ru: 'Приватная PC-комната', en: 'Private PC room' },
+        for: { ru: 'Отлично для соло гейминга или пары', en: 'Great for solo gaming or couples' },
         price: { ru: 'от 300 ₽/ч', en: 'from 300 ₽/hr' },
         features: {
           ru: ['1–2 человека', 'Профессиональный ПК', '240 Гц монитор', 'Заказ еды из комнаты'],
@@ -131,6 +135,7 @@ export const content = {
         id: 'vip',
         name: { ru: 'VIP', en: 'VIP' },
         desc: { ru: 'Просторный приватный зал', en: 'Spacious private suite' },
+        for: { ru: 'Идеально для компаний и праздников', en: 'Perfect for groups and parties' },
         price: { ru: 'от 500 ₽/ч', en: 'from 500 ₽/hr' },
         features: {
           ru: ['до 8 человек', 'Диваны и зона отдыха', 'Большой экран', 'Приоритетный сервис'],
@@ -142,6 +147,7 @@ export const content = {
         id: 'streaming',
         name: { ru: 'Стриминг', en: 'Streaming' },
         desc: { ru: 'Комната для стримов и съёмок', en: 'Room for streams and shoots' },
+        for: { ru: 'Для создателей контента', en: 'For content creators' },
         price: { ru: 'от 700 ₽/ч', en: 'from 700 ₽/hr' },
         features: {
           ru: ['Профстудийное освещение', 'Зелёный экран', 'Стриминг-оборудование', 'Звукоизоляция'],
@@ -154,27 +160,27 @@ export const content = {
 
   howItWorks: {
     tag: { ru: 'Как это работает', en: 'How It Works' },
-    title: { ru: 'Четыре шага до\nвашего сеанса', en: 'Four Steps to\nYour Session' },
+    title: { ru: 'Без сложностей.\nЧетыре простых шага', en: 'No complexity.\nFour simple steps' },
     steps: [
       {
         n: '01',
         title: { ru: 'Выберите формат', en: 'Choose a Format' },
-        desc: { ru: 'Клуб, VIP или ресторан — решайте, что вам нужно сегодня.', en: 'Club, VIP or restaurant — decide what you need today.' },
+        desc: { ru: 'Можно прийти впервые. Клуб, VIP или ресторан — решайте, что нужно.', en: 'First time friendly. Club, VIP or restaurant — decide what you need.' },
       },
       {
         n: '02',
         title: { ru: 'Напишите или позвоните', en: 'Message or Call' },
-        desc: { ru: 'Свяжитесь с нами в Telegram или по телефону — ответим быстро.', en: 'Contact us via Telegram or phone — we respond quickly.' },
+        desc: { ru: 'Свяжитесь с нами — ответим за 2 минуты и всё объясним.', en: 'Contact us — we respond in 2 minutes and explain everything.' },
       },
       {
         n: '03',
-        title: { ru: 'Выберите дату и время', en: 'Pick Date & Time' },
-        desc: { ru: 'Зафиксируем бронь в удобное для вас время.', en: "We'll confirm your booking at a time that works for you." },
+        title: { ru: 'Выберите время', en: 'Pick a Time' },
+        desc: { ru: 'Зафиксируем бронь. Всё онлайн и быстро.', en: "Fast, online booking to reserve your spot." },
       },
       {
         n: '04',
         title: { ru: 'Приходите и отдыхайте', en: 'Arrive & Enjoy' },
-        desc: { ru: 'Администратор встретит вас и поможет со всем. Остальное — на нас.', en: 'Our team welcomes you and takes care of everything else.' },
+        desc: { ru: 'Администратор всё покажет и поможет. Остальное — на нас.', en: 'Our admin demonstrates everything and helps setup. Leave the rest to us.' },
       },
     ],
   },
@@ -196,6 +202,8 @@ export const content = {
   contact: {
     tag: { ru: 'Контакты', en: 'Contact' },
     title: { ru: 'Приходите\nв ACS', en: 'Visit\nACS' },
+    microcopy: { ru: 'Ответим за 2 минуты', en: 'We respond in 2 minutes' },
+    microcopy2: { ru: 'Поможем выбрать формат', en: 'Help you choose a format' },
     address: { ru: 'Москва, Тверская ул., 1\n(уточняется)', en: 'Moscow, Tverskaya St., 1\n(to be confirmed)' },
     hours: { ru: 'Ежедневно, 24/7', en: 'Open daily, 24/7' },
     parking: { ru: 'Бесплатная парковка рядом', en: 'Free parking nearby' },
@@ -238,6 +246,11 @@ export const content = {
 
   footer: {
     tagline: { ru: 'Пространство нового уровня', en: 'Next-Level Space' },
+    links: {
+      ru: ['Комнаты', 'Ресторан', 'Как это работает'],
+      en: ['Rooms', 'Restaurant', 'How it works'],
+    },
+    hrefs: ['#formats', '#restaurant', '#how-it-works'],
     socials: [
       { label: 'Instagram', href: 'https://instagram.com/acs_moscow', icon: 'ig' },
       { label: 'Telegram', href: 'https://t.me/ACS_Moscow', icon: 'tg' },

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useLang } from '@/context/LangContext'
 import { content } from '@/lib/content'
 import styles from './Navbar.module.css'
+import TrackedLink from './TrackedLink'
 
 export default function Navbar() {
   const { lang, toggle } = useLang()
@@ -54,7 +55,7 @@ export default function Navbar() {
             </button>
 
             {/* Book CTA (desktop) */}
-            <a
+            <TrackedLink
               href={content.contact.telegram}
               target="_blank"
               rel="noopener noreferrer"
@@ -62,7 +63,7 @@ export default function Navbar() {
               id="nav-book-cta"
             >
               {c.cta[lang]}
-            </a>
+            </TrackedLink>
 
             {/* Hamburger */}
             <button
@@ -96,7 +97,7 @@ export default function Navbar() {
           ))}
         </ul>
         <div className={styles.mobileCtas}>
-          <a
+          <TrackedLink
             href={content.contact.telegram}
             target="_blank"
             rel="noopener noreferrer"
@@ -105,7 +106,7 @@ export default function Navbar() {
             id="mobile-menu-book"
           >
             {c.cta[lang]}
-          </a>
+          </TrackedLink>
           <button className={styles.langBtnMobile} onClick={toggle}>
             {c.langSwitch[lang]}
           </button>

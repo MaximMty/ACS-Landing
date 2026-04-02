@@ -5,6 +5,8 @@ import { useLang } from '@/context/LangContext'
 import { content } from '@/lib/content'
 import styles from './Hero.module.css'
 
+import TrackedLink from './TrackedLink'
+
 export default function Hero() {
   const { lang } = useLang()
   const c = content.hero
@@ -38,7 +40,7 @@ export default function Hero() {
       {/* Background image with parallax */}
       <div className={styles.bgWrap} ref={imageRef}>
         <Image
-          src="/images/hero_bg.jpg"
+          src="/images/DAN_2989-HDR_resized.jpg"
           alt="ACS Gaming Lounge interior"
           fill
           priority
@@ -88,24 +90,25 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className={`${styles.ctas} reveal d3`}>
-          <a
+          <TrackedLink
             href={content.contact.telegram}
             target="_blank"
             rel="noopener noreferrer"
             className={`btn btn-primary btn-lg ${styles.ctaPrimary}`}
+            id="hero-book-cta"
+          >
+            {c.cta1[lang]}
+          </TrackedLink>
+          <TrackedLink
+            href={content.contact.telegram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`btn btn-outline btn-lg`}
             id="hero-telegram-cta"
           >
             <TelegramIcon />
-            {c.cta1[lang]}
-          </a>
-          <a
-            href={`tel:${content.contact.phone}`}
-            className={`btn btn-outline btn-lg`}
-            id="hero-call-cta"
-          >
-            <PhoneIcon />
             {c.cta2[lang]}
-          </a>
+          </TrackedLink>
         </div>
       </div>
 

@@ -36,10 +36,10 @@ export default function Footer() {
 
           {/* Nav links */}
           <div className={styles.col}>
-            <h3 className={styles.colTitle}>{lang === 'ru' ? 'Навигация' : 'Navigation'}</h3>
+            <h3 className={styles.colTitle}>{lang === 'ru' ? 'Быстрые ссылки' : 'Quick Links'}</h3>
             <ul className={styles.colLinks}>
-              {content.nav.links[lang].map((label, i) => (
-                <li key={i}><a href={content.nav.hrefs[i]}>{label}</a></li>
+              {c.links[lang].map((label, i) => (
+                <li key={i}><a href={c.hrefs[i]}>{label}</a></li>
               ))}
             </ul>
           </div>

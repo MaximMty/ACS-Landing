@@ -10,28 +10,35 @@ export interface Offer {
 }
 
 const offers: Offer[] = [
-  // Uncomment and edit to activate offers:
-  // {
-  //   id: 'student',
-  //   tag: { ru: 'Студентам', en: 'Students' },
-  //   title: { ru: 'Скидка 20% по студенческому', en: '20% off with student ID' },
-  //   desc: {
-  //     ru: 'Предъявите студенческий билет при заселении.',
-  //     en: 'Show your student ID at check-in.',
-  //   },
-  //   badge: { ru: '−20%', en: '−20%' },
-  //   validUntil: '2026-06-30',
-  // },
-  // {
-  //   id: 'combo',
-  //   tag: { ru: 'Комбо', en: 'Combo' },
-  //   title: { ru: 'Игра + обед = выгода', en: 'Gaming + Lunch = Value' },
-  //   desc: {
-  //     ru: '2 часа игры и бизнес-ланч по специальной цене.',
-  //     en: '2 hours gaming plus a business lunch at a special rate.',
-  //   },
-  //   badge: { ru: 'Комбо', en: 'Combo' },
-  // },
+  {
+    id: 'availability',
+    tag: { ru: 'Сегодня', en: 'Today' },
+    title: { ru: 'Есть свободные комнаты', en: 'Rooms Available' },
+    desc: {
+      ru: 'Забронируйте сейчас — мы быстро подтвердим наличие мест на вечер.',
+      en: 'Book now — fast confirmation for tonight.',
+    },
+    badge: { ru: 'Горящее', en: 'Hot' },
+  },
+  {
+    id: 'student',
+    tag: { ru: 'Студентам', en: 'Students' },
+    title: { ru: 'Скидка 20% по студенческому', en: '20% off with student ID' },
+    desc: {
+      ru: 'Предъявите студенческий билет администратору при заселении.',
+      en: 'Show your student ID at check-in.',
+    },
+    badge: { ru: '−20%', en: '−20%' },
+  },
+  {
+    id: 'weekdays',
+    tag: { ru: 'Дневной тариф', en: 'Daytime limits' },
+    title: { ru: 'Скидки в будние дни', en: 'Weekday Discounts' },
+    desc: {
+      ru: 'Играйте с 10:00 до 17:00 по специальным выгодным ценам.',
+      en: 'Play from 10:00 to 17:00 at special discounted rates.',
+    },
+  },
 ]
 
 export default offers

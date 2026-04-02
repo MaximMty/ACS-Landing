@@ -36,23 +36,53 @@ export default function VisitFormats() {
           </h2>
         </div>
 
-        {/* Horizontal scroll on mobile, grid on desktop */}
+        {/* Club Block */}
+        <h3 className="heading-md reveal d2" style={{ marginBottom: 20 }}>
+          {lang === 'ru' ? 'Киберклуб' : 'Cyberclub'}
+        </h3>
         <div className={styles.track}>
           <div className={styles.cards}>
-            {c.items.map((item, i) => (
+            {c.clubItems.map((item, i) => (
               <div
                 key={item.id}
                 className={`${styles.card} reveal d${Math.min(i + 1, 4) as 1|2|3|4}`}
                 id={`format-card-${item.id}`}
               >
                 <div className={styles.cardImg}>
-                  <Image
-                    src={item.image}
-                    alt={item.title[lang]}
-                    fill
-                    sizes="(max-width:900px) 280px, 320px"
-                    className={styles.img}
-                  />
+                  <Image src={item.image} alt={item.title[lang]} fill sizes="(max-width:900px) 280px, 320px" className={styles.img} />
+                  <span className={styles.cardTag}>{item.tag[lang]}</span>
+                </div>
+                <div className={styles.cardBody}>
+                  <h3 className={`heading-md ${styles.cardTitle}`}>{item.title[lang]}</h3>
+                  <p className={styles.cardDesc}>{item.desc[lang]}</p>
+                  <span className={styles.cardFor}>{item.for[lang]}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Deep dive CTA */}
+        <div className="reveal d3" style={{ marginTop: 20, marginBottom: 60 }}>
+          <a href="#contact" className="btn btn-outline" style={{ display: 'inline-flex' }}>
+            {lang === 'ru' ? 'Посмотреть все комнаты \u2192' : 'View all rooms \u2192'}
+          </a>
+        </div>
+
+        {/* Restaurant & Events Block */}
+        <h3 className="heading-md reveal d1" style={{ marginBottom: 20 }}>
+          {lang === 'ru' ? 'Ресторан и Мероприятия' : 'Restaurant & Events'}
+        </h3>
+        <div className={styles.track}>
+          <div className={`${styles.cards} ${styles.cardsRest}`}>
+            {c.restItems.map((item, i) => (
+              <div
+                key={item.id}
+                className={`${styles.card} reveal d${Math.min(i + 1, 4) as 1|2|3|4}`}
+                id={`format-card-${item.id}`}
+              >
+                <div className={styles.cardImg}>
+                  <Image src={item.image} alt={item.title[lang]} fill sizes="(max-width:900px) 280px, 320px" className={styles.img} />
                   <span className={styles.cardTag}>{item.tag[lang]}</span>
                 </div>
                 <div className={styles.cardBody}>

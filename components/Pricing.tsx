@@ -45,10 +45,16 @@ export default function Pricing() {
                 <div>
                   <span className={styles.planName}>{plan.name[lang]}</span>
                   <span className={styles.planDesc}>{plan.desc[lang]}</span>
+                  <span className={styles.planFor} style={{ display: 'block', fontSize: '0.75rem', marginTop: 4, color: 'var(--accent-lt)', fontWeight: 600 }}>
+                    {plan.for[lang]}
+                  </span>
                 </div>
                 <div className={styles.price}>{plan.price[lang]}</div>
               </div>
               <div className={styles.divider} />
+              <div className={styles.includesLabel} style={{ fontSize: '0.85rem', color: 'var(--text-3)', marginBottom: 12, fontWeight: 500 }}>
+                {c.includesLabel[lang]}
+              </div>
               <ul className={styles.features}>
                 {plan.features[lang].map((feat, j) => (
                   <li key={j} className={styles.feature}>
